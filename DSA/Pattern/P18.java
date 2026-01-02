@@ -9,6 +9,6 @@ public class P18 {
             }
             System.out.println();
         }
-      
+      sc.close();
     }
 }

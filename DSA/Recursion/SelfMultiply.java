@@ -1,4 +1,3 @@
-import java.util.*;
 
 public class SelfMultiply {
     public static int re1(int n, int x) {

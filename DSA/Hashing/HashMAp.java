@@ -1,0 +1,16 @@
+package DSA.Hashing;
+
+import java.util.HashMap;
+
+class HashMAp {
+    public static void main(String[] args) {
+        HashMap<Integer,String> map = new HashMap<>();
+        map.put(101, "Aryan");
+        map.put(102, "Karan");
+        map.put(103, "Rahul");
+        System.out.println(map.get(101));//Aryan
+        System.out.println(map.containsKey(101));//this method checks the key is exist or not it returns boolean vaue true/fals
+        System.out.println(map.containsValue("Rahul"));//this method checks the value is exist or not it returns boolean value true/false
+        
+    }
+}

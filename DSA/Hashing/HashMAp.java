@@ -20,7 +20,14 @@ class HashMAp {
         
         System.out.println(map.size());//3
         for (Map.Entry<Integer, String> e : map.entrySet()) {
+            System.out.println(e.getKey());
+        }
+        for (Map.Entry<Integer, String> e : map.entrySet()) {
+            System.out.println(e.getValue());
+        }
+        for (Map.Entry<Integer, String> e : map.entrySet()) {
             System.out.println(e);
         }
+        //Map.Entry<Integer, String> => Type 
     }
 }

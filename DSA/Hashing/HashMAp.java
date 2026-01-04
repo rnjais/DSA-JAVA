@@ -3,6 +3,7 @@ package DSA.Hashing;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 class HashMAp {
     public static void main(String[] args) {
@@ -34,6 +35,14 @@ class HashMAp {
         for (Map.Entry<Integer, String> e : map.entrySet()) {
             System.out.println(e);
         }
-        //Map.Entry<Integer, String> => Type 
+
+        Set <Integer> keys = map.keySet();
+        for (int key : keys) {
+            System.out.println(key);
+        }
+        //Map.Entry<Integer, String> => Type
+        System.out.println(map.entrySet());//[101=Aryan, 102=Karan, 103=null]
+        System.out.println(map.keySet());//[101, 102, 103]
+        System.out.println(map.values());//[Aryan, Karan, null]
     }
 }

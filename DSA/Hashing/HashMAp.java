@@ -41,8 +41,14 @@ class HashMAp {
             System.out.println(key);
         }
         //Map.Entry<Integer, String> => Type
+        
         System.out.println(map.entrySet());//[101=Aryan, 102=Karan, 103=null]
+
         System.out.println(map.keySet());//[101, 102, 103]
+        
         System.out.println(map.values());//[Aryan, Karan, null]
+
+        map.remove(103);
+        System.out.println(map);//{101=Aryan, 102=Karan}
     }
 }

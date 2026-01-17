@@ -7,7 +7,7 @@ import java.util.Set;
 
 class HashMAp {
     public static void main(String[] args) {
-        HashMap<Integer,String> map = new HashMap<>();
+        Map<Integer,String> map = new HashMap<>();
         map.put(101, "Aryan");
         map.put(102, "Karan");
         map.put(103, "Rahul");

@@ -48,9 +48,12 @@ public class SelectionSort {
                     min = j;
                 }
             }
+            if(min!=i){
             temp = a[min];
             a[min] = a[i];
             a[i] = temp;
+            }
+         
 
             for (int k : a) {
                 System.out.print(k + " ");
@@ -71,6 +74,7 @@ public class SelectionSort {
             a[i] = sc.nextInt();
         }
         miniMumValue(a);
+        sc.close();
     }
 
 }

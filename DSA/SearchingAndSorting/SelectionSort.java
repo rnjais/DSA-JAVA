@@ -2,7 +2,7 @@ package DSA.SearchingAndSorting;
 
 public class SelectionSort {
     public static void method(int a[]) {
-        int size = a.length;
+        int size = a.length; 
         int temp = 0;
         System.out.println("Before Sorting");
         for (int i : a) {

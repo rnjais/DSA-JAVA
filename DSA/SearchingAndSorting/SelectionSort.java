@@ -8,8 +8,8 @@ public class SelectionSort {
     // in each pass and placing it at the END of the array
     public static void maxiMumValue(int a[]) {
 
-        int size = a.length;   // Store the size of the array
-        int temp = 0;          // Temporary variable for swapping
+        int size = a.length; // Store the size of the array
+        int temp = 0; // Temporary variable for swapping
 
         // Display array before sorting
         System.out.println("Before Sorting");
@@ -56,9 +56,9 @@ public class SelectionSort {
     // in each pass and placing it at the BEGINNING of the array
     public static void miniMumValue(int a[]) {
 
-        int size = a.length;   // Store array size
-        int temp = 0;          // Temporary variable for swapping
-        int minIndex = -1;     // Stores index of minimum element
+        int size = a.length; // Store array size
+        int temp = 0; // Temporary variable for swapping
+        int minIndex = -1; // Stores index of minimum element
 
         // Display array before sorting
         System.out.println("Before Sorting");
@@ -75,7 +75,7 @@ public class SelectionSort {
             minIndex = i; // Assume current index has the minimum value
 
             // Find the minimum element index in the unsorted part
-            for (int j = i+1; j < size; j++) {
+            for (int j = i + 1; j < size; j++) {
                 if (a[minIndex] > a[j]) {
                     minIndex = j;
                 }

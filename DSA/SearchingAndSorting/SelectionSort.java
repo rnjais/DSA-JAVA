@@ -1,8 +1,10 @@
 package DSA.SearchingAndSorting;
+
 import java.util.Scanner;
+
 public class SelectionSort {
     public static void maxiMumValue(int a[]) {
-        int size = a.length; 
+        int size = a.length;
         int temp = 0;
         System.out.println("Before Sorting");
         for (int i : a) {
@@ -11,14 +13,14 @@ public class SelectionSort {
         System.out.println();
         System.out.println("Sorting");
         for (int i = 0; i < size; i++) {
-            int min = 0;
+            int minIndex = 0;
             for (int j = 1; j < size - i; j++) {
-                if (a[min] < a[j]) {
-                    min = j;
+                if (a[minIndex] < a[j]) {
+                    minIndex = j;
                 }
             }
-            temp = a[min];
-            a[min] = a[size - i - 1];
+            temp = a[minIndex];
+            a[minIndex] = a[size - i - 1];
             a[size - i - 1] = temp;
 
             for (int k : a) {
@@ -32,9 +34,11 @@ public class SelectionSort {
             System.out.print(i + " ");
         }
     }
+
     public static void miniMumValue(int a[]) {
-        int size = a.length; 
+        int size = a.length;
         int temp = 0;
+        int minIndex = -1;
         System.out.println("Before Sorting");
         for (int i : a) {
             System.out.print(i + " ");
@@ -42,18 +46,16 @@ public class SelectionSort {
         System.out.println();
         System.out.println("Sorting");
         for (int i = 0; i < size; i++) {
-            int min = i;
-            for (int j = i; j < size; j++) {
-                if (a[min] > a[j]) {
-                    min = j;
+             minIndex = i;
+            for (int j = i+1; j < size; j++) {
+                if (a[minIndex] > a[j]) {
+                    minIndex = j;
                 }
             }
-            if(min!=i){
-            temp = a[min];
-            a[min] = a[i];
-            a[i] = temp;
-            }
-         
+                temp = a[minIndex];
+                a[minIndex] = a[i];
+                a[i] = temp;
+            
 
             for (int k : a) {
                 System.out.print(k + " ");
@@ -66,6 +68,7 @@ public class SelectionSort {
             System.out.print(i + " ");
         }
     }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int a[] = new int[6];

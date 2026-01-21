@@ -3,35 +3,22 @@ package DSA.SearchingAndSorting;
 public class InsertionSort {
     public static void method(int a[]) {
         int size = a.length;
-         System.out.println("Before Sorting \n");
-        for (int i : a) {
-            System.out.print(i + " ");
-        }
-        System.out.println("\n---------- \n");
-
-        for (int i = 0; i < size - 1; i++) {
-            int key = i + 1;
-            for (int j = key - 1; 0 <= j; j--) {
-                if (a[j] > a[key]) {
-                    int temp = a[j];
-                    a[j] = a[key];
-                    a[key] = temp;
-                    key--;
-                    for (int k : a) {
-                        System.out.print(k + " ");
-                    }
-                    System.out.println();
-                }
+ 
+        for (int i = 1; i < size ; i++) {
+            int key = a[i];
+            int j = i - 1;
+            while (a[j] > key && j >= 0) {
+                a[j + 1] = a[j];
+                j--;
             }
-        }
-        System.out.println("After Sorting \n");
-        for (int i : a) {
-            System.out.print(i + " ");
-        }
+            a[j + 1] = key;
+           
+        
+      
     }
 
     public static void main(String[] args) {
-        int a[] = { 9,2,8,5,1,8,6,4,3,9,5,6,8 };
+        int a[] = { 9, 2, 8, 5, 1, 8 };
         method(a);
     }
 }

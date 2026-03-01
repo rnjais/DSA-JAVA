@@ -9,8 +9,14 @@ class PrintNtime {
        return re(n+1);
        
     }
+    static void re(int i, int n){
+    if(i > n)
+    return;
+    System.out.println(i);
+    re(i+1, n);
+    }
 
     public static void main(String[] args) {
-        System.out.println(re(1));
+       re(1,5);
     }
 }

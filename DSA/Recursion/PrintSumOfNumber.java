@@ -21,21 +21,18 @@ public class PrintSumOfNumber {
     
     public static int re(int n) {
         if (n == 0) {
-            
             return 0;
         }
         return n + re(n - 1);
 
     }
      public static void sumofNumber(int i, int n,int sum){
-       
-        if(n==i){
-            sum+=i*i;
+        if(i>n){
             System.out.println(sum);
             return;
         }
-        sum = sum + i*i;
-        sumofNumber(i + 1,n,sum);
+       
+        sumofNumber(i + 1, n, sum + i);
     }
     
     public static void main(String[] args) {

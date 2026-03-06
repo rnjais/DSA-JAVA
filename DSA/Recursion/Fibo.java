@@ -14,15 +14,7 @@ public class Fibo {
         }
     }
 
-    public static void fibo(int n, int f, int s) {
-        if (n == 5) {
-            return;
-        }
-        int fibo = f + s;
-        System.out.println(fibo);
-        fibo(n + 1, s, fibo); // fibo(n+1, f=s, s=fibo);
 
-    }
 
     public static int fibo1(int n) {
        if(n==0){
@@ -34,13 +26,9 @@ public class Fibo {
        return fibo1(n-1)+fibo1(n-2);
     }
     public static void main(String[] args) {
-        // int a =0;
-        // int b = 1;
-        // System.out.println(a);
-        // System.out.println(b);
-        // fibo(0, a, b);
-        // System.out.println(fibo1(1));
-        int n = 10;
+      
+        
+        int n = 0;
         for (int i = 0; i <= n; i++) {
             System.out.println(fibo1(i));
         }

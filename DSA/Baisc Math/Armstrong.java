@@ -47,6 +47,6 @@ public class Armstrong {
         }
     }
     public static void main(String[] args) {
-      System.out.println(method2(136575634));
+      System.out.println(method2(93084));
     }
 }

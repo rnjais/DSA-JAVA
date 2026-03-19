@@ -11,7 +11,7 @@ public class LisstInterfacce {
         list1.add(1);
         list1.add(8);
         list1.add(5);
-        
+        list1.size();
         for (int n : list1) {
             System.out.println(n);
         }

@@ -24,10 +24,23 @@ public class P4CheckArrayIsSorted {
         return true;
     }
 
+    public static boolean isSorted2(int[] arr,int i) {
+
+    int n = arr.length;
+
+     if(i==n){
+        return true;
+     }
+     if(arr[i]<arr[i-1])
+        return false;
+
+    return  isSorted2(arr, i+1);
+    }
+
     public static void main(String[] args) {
-        int[] arr = { 1, 2, 3, 4, 5 };
+        int[] arr = { 1, 2, 10, 4, 5 };
         int n = 5;
-        boolean ans = isSorted1(arr, n);
+        boolean ans = isSorted2(arr, 1);
         // Output result
         System.out.println(ans);
     }

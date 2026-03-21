@@ -39,7 +39,7 @@ public class P4CheckArrayIsSorted {
 
     public static void main(String[] args) {
         int[] arr = { 1, 2, 10, 4, 5 };
-        int n = 5;
+        //int n = 5;
         boolean ans = isSorted2(arr, 1);
         // Output result
         System.out.println(ans);
